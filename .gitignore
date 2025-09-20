@@ -1,0 +1,17 @@
+@"
+# Python
+__pycache__/
+*.pyc
+.venv/
+env/
+venv/
+
+# Streamlit / IDE
+.streamlit/
+.vscode/
+.idea/
+
+# Secrets
+db_config.py
+*.env
+"@ | Out-File .gitignore -Encoding utf8
