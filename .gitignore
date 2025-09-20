@@ -1,17 +1,78 @@
-@"
-# Python
+# -----------------------------
+# Python Bytecode
+# -----------------------------
 __pycache__/
-*.pyc
-.venv/
-env/
-venv/
+*.py[cod]
+*$py.class
 
-# Streamlit / IDE
+# -----------------------------
+# Virtual Environments
+# -----------------------------
+.venv/
+venv/
+env/
+ENV/
+.ENV/
+
+# -----------------------------
+# Streamlit / IDE / Logs
+# -----------------------------
 .streamlit/
+*.log
 .vscode/
 .idea/
+*.sublime-project
+*.sublime-workspace
 
-# Secrets
-db_config.py
-*.env
-"@ | Out-File .gitignore -Encoding utf8
+# -----------------------------
+# OS Files
+# -----------------------------
+.DS_Store
+Thumbs.db
+
+# -----------------------------
+# Secrets / Credentials
+# -----------------------------
+db_config.py      # your MySQL credentials file
+.env              # environment variables file
+*.pem             # private keys
+*.key
+*.crt
+*.p12
+
+# -----------------------------
+# Python Packages / Build
+# -----------------------------
+*.egg-info/
+dist/
+build/
+pip-wheel-metadata/
+*.egg
+*.whl
+
+# -----------------------------
+# Jupyter / IPython
+# -----------------------------
+.ipynb_checkpoints/
+profile_default/
+ipython_config.py
+
+# -----------------------------
+# Misc / Cache
+# -----------------------------
+*.cache/
+*.pytest_cache/
+.tox/
+.coverage
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# -----------------------------
+# Other temporary files
+# -----------------------------
+*.tmp
+*.bak
+*.swp
